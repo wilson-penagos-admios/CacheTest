@@ -21,11 +21,11 @@ public class CacheTest {
     public static void tearDownClass() {
     }
     
-    Chache cache;
+    Cache cache;
     
     @Before
     public void setUp() {
-        cache = new Chache();
+        cache = new Cache();
     }
     
     @After
