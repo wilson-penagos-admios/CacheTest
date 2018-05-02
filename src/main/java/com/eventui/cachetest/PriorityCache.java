@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.eventui.cachetest;
 
 import java.util.Objects;
@@ -20,9 +15,7 @@ public class PriorityCache implements CacheObject {
         this.value = value;
         this.priority = priority;
     }
-    
-    
-    
+
     public PriorityCache() {
     }
 
@@ -56,28 +49,8 @@ public class PriorityCache implements CacheObject {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final PriorityCache other = (PriorityCache) obj;
-        if (this.priority != other.priority) {
-            return false;
-        }
-        if (!Objects.equals(this.value, other.value)) {
-            return false;
-        }
+        if(obj == null || !(obj instanceof PriorityCache) || ((PriorityCache) obj).priority != this.priority || ((PriorityCache) obj).value != this.value) return false;
         return true;
     }
-    
-    
-    
 
-   
-    
 }

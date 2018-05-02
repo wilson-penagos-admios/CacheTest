@@ -11,12 +11,12 @@ package com.eventui.cachetest;
  */
 interface CacheObject {
 
-    public void setValue(Object value);
+    void setValue(Object value);
 
-    public Object getValue();
+    Object getValue();
 
-    public void setPriority(int priority);
+    void setPriority(int priority);
 
-    public int getPriority();
+    int getPriority();
     
 }
